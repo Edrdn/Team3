@@ -27,20 +27,30 @@
 <body>
 	<div class="container">
 	  <h1>Kay Ryan</h1>
-		<div id="content">
-			<div class="row-1">
-				<div class="col-lg-6">
+		<main>
+			<div class="row">
+				<div class="col-sm-6">
 				  <img src="img/portrait.jpg" alt="image">
 				</div>
-        <div class="col-lg-6">
+        <div class="col-sm-6">
 				  <img src="img/marin.jpeg" alt="image">
 				</div>
 			</div>
-			<div class="row-2">
-				<div class="col-lg-4">audio clip</div>
-        <div class="col-lg-8">main text</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<audio controls>
+	         <source src=".mp3" type="audio/mpeg">
+        	</audio>
+        </div>
+      <div class="col-sm-8">
+        <p id="text"></p>
 			</div>
-		</div>
+			<div class="row">
+				<div id="poem" class="col-sm-4">
+					<p></p>
+			  </div>
+			</div>
+		</main>
   </div>
 
 </body>
