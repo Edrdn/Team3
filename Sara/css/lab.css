@@ -40,10 +40,10 @@ h1 {
 
 #text {
   position: relative;
-  max-width: 65%;
+  max-width: 100%;
   max-height: auto;
-  margin: 10px;
-  padding: 30px;
+  padding: 10px;
+  text-align: left;
 }
 
 .col-lg-6, .col-lg-4, .col-lg-8 {
@@ -51,6 +51,7 @@ h1 {
   max-width: 50%;
   min-height: 200px;
   min-width: 20%;
+  margin: 10px;
 }
 
 .bg-light {
