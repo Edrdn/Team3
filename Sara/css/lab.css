@@ -52,8 +52,9 @@ main {
   justify-content: space-between;
   min-width: 100%;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   font-family: 'Inconsolata', monospace;
+  color: #0d0907;
 }
 
 h1, h2, h3 {
@@ -70,12 +71,12 @@ h1, h2, h3 {
   text-align: left;
 }
 
-.col-lg-6, .col-lg-4, .col-lg-8 {
-  max-height: 800px;
-  max-width: 50%;
-  min-height: 200px;
-  min-width: 20%;
-  margin: 10px;
+#poem {
+  margin-left: 65px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 17px;
 }
 
 .bg-light {
@@ -101,8 +102,19 @@ img {
   height: auto;
 }
 
-.audio {
+#audio {
+  max-width: 30%;
+  min-width: 15%;
+  max-height: 350px;
   background-color: #bbd4e4;
+  border: solid 4px #7e8e99;
+  text-align: center;
+}
+
+audio {
+  max-width: 300px;
+  position: relative;
+  text-align: center;
 }
 
 a {
@@ -118,4 +130,10 @@ a:hover {
 
 footer {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .row #audio {
+       min-width: 350px;
+     }
 }
