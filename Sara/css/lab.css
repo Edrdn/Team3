@@ -1,5 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+.navbar-brand, .nav-item {
+  font-family: 'Inconsolata', monospace;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.navbar-nav > .active > a {
+    background-color: purple !important;
+}
+.navbar {
+  background-color: #804033 !important;
+}
+.nav-link {
+  color: #FFFFFF !important;
+}
+
+header {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 350%;
+}
+
+h1 {
+  line-height: 2em !important;
+}
 
 body {
     background-color: #ffffff;
@@ -7,7 +34,6 @@ body {
     background-repeat: none;
     background-size: cover;
     font-family: serif;
-    font-size: 100%;
     color: #5a7048;
 }
 
@@ -34,10 +60,6 @@ h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
   color: #5a7048;
   padding: 7px;
-}
-
-h1 {
-  font-size: 350%;
 }
 
 #text {
@@ -79,7 +101,7 @@ img {
   height: auto;
 }
 
-.col-sm-4 {
+.audio {
   background-color: #bbd4e4;
 }
 
@@ -87,7 +109,6 @@ a {
     color: #000000;
     text-decoration: none;
     background-color: transparent;
-    font-size: 140%;
     justify-content: space-between;
 }
 
