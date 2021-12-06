@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
-  background-color: #66804d;
+  background-color: #FCF5E5;
 }
 
-#collage {
-  filter: grayscale(60%);
+.border-sm-right {
+  border-right: 1px solid silver;
 }
-
+@media (max-width: 480px) {
+  .border-sm-right {
+    border-right: none;
+  }
+}
+.navbar-brand {
+  font-size: 1.7em;
+}
 .navbar-brand, .nav-item {
   font-family: 'Inconsolata', monospace;
 }
-.navbar-brand {
-  font-weight: 600;
-  font-size: 1.5em;
+.mine {
+  font-weight: 800;
 }
 .navbar {
   background-color: #804033 !important;
@@ -21,14 +27,25 @@ body {
 .nav-link {
   color: #FFFFFF !important;
 }
-
-header {
-  font-family: 'Libre Baskerville', serif;
-  text-align: center;
+.navbar ul li a:hover {
+color: #FCF5E5 !important;
 }
 
-h1 {
+header {
+  text-align: center;
+}
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', serif;
   line-height: 2em !important;
+}
+.sub {
+  font-size: 80%;
+  display: inline-block;
+}
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 140% !important;
+  }
 }
 
 figure {
@@ -39,7 +56,15 @@ figure {
 figcaption {
     background-color: rgba(0,0,0,0.7);
     color: #fff;
-    font: italic medium sans-serif;
+    font: italic medium Libre-Baskerville, serif;
     padding: 10px;
     text-align: center;
 }
+
+/* @media (min-width: 768px) {
+  .carousel {
+    margin-left: auto;
+  margin-right: auto;
+    max-width: 60vw !important;
+  }
+} */
