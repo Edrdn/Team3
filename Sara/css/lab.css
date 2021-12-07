@@ -29,7 +29,7 @@ h1 {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #FCF5E5;
     background-attachment: fixed;
     background-repeat: none;
     background-size: cover;
@@ -72,6 +72,7 @@ h1, h2, h3 {
 }
 
 #poem {
+  font-size: 88%;
   margin-left: 65px;
   margin-right: 15px;
   padding-left: 10px;
@@ -79,23 +80,24 @@ h1, h2, h3 {
   line-height: 17px;
 }
 
-.bg-light {
-  position: sticky;
-  color: green;
-}
-
-/*color for nav*/
-.bg-light {
-    background-color: #ecede2!important;
-}
-
-img {
+.bio, .scz {
   position: relative;
-  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
   min-width: 200px;
+  margin: none;
+  vertical-align: middle;
+}
+
+figcaption {
+    font: italic medium Libre-Baskerville, serif;
+    padding: 10px;
 }
 
 .planet {
+  position: relative;
+  display: inline-block;
   padding: 10px;
   max-width: 200px;
   min-width: 80px;
@@ -108,13 +110,29 @@ img {
   max-height: 350px;
   background-color: #bbd4e4;
   border: solid 4px #7e8e99;
+  margin-top: 250px;
   text-align: center;
+  justify-content: center !important;
 }
 
 audio {
   max-width: 300px;
   position: relative;
-  text-align: center;
+}
+
+.comment {
+  max-width: 30%;
+  min-width: 15%;
+}
+
+footer {
+  display: block;
+  background-color: #b66648;
+  color: #804033;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 80%;
 }
 
 a {
@@ -128,12 +146,15 @@ a:hover {
     color: #787878;
   }
 
-footer {
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .row #audio {
-       min-width: 350px;
+@media screen and (max-width: 1200px) {
+  #audio {
+       min-width: 100%;
+       margin-top: 40px;
+       display: inline-block;
+       background-color: none;
+       border: none;
      }
+   img #audio{
+     display: none;
+   }
 }
